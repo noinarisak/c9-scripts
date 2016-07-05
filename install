@@ -33,7 +33,6 @@ else
     INSTALLED=1
 fi
 
-
 if [ -z "$(git config --global 'url.git@github.com:.insteadOf')" ]; then
     git config --global 'url.git@github.com:.insteadOf' 'https://github.com/'
     INSTALLED=1
