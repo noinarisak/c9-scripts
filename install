@@ -26,6 +26,14 @@ else
     INSTALLED=1
 fi
 
+if diff "$FNKR_C9_LIBRARY/assets/gitconfig" "$HOME/.gitconfig" > /dev/null; then
+    echo "$FNKR_C9_NAME: install: info: ~/.gitconfig replacement already installed. skipping."
+else
+    cp "$FNKR_C9_LIBRARY/assets/gitconfig" "$HOME/.gitconfig"
+    INSTALLED=1
+fi
+
+
 if [ -z "$(git config --global 'url.git@github.com:.insteadOf')" ]; then
     git config --global 'url.git@github.com:.insteadOf' 'https://github.com/'
     INSTALLED=1
