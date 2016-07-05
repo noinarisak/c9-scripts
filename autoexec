@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ -z "$FNKR_C9_AUTOEXEC" ]; then
-    export FNKR_C9_NAME="fnkr/c9-scripts"
+    export FNKR_C9_NAME="noinarisak/c9-scripts"
     export FNKR_C9_LIBRARY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
     export PATH="$PATH:$FNKR_C9_LIBRARY/utils"
