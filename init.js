@@ -7,7 +7,7 @@
             return '/home/ubuntu/c9-scripts';
         },
         getRemote: function(self) {
-            return 'git@github.com:fnkr/c9-scripts.git';
+            return 'git@github.com:noinarisak/c9-scripts.git';
         }
     },
     console: {
