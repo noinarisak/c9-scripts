@@ -57,6 +57,13 @@
     ulg = !git log --oneline --decorate --graph --all
     # Disable Fast-Forward to reduce merge bubbles.
     mff = !git merge --no-ff
+    # Stash related
+    sl = stash list
+    sll = stash-list
+    slll = stash-list --full
+    ss = stash save
+    sa = "!sh -c 'git stash apply stash@{$1}' -"
+    sd = "!sh -c 'git stash drop stash@{$1}' -"
 
 [branch]
     autosetuprebase = always
