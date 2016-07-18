@@ -59,8 +59,7 @@
     mff = !git merge --no-ff
     # Stash related
     sl = stash list
-    sll = stash-list
-    slll = stash-list --full
+    slstat = stash list --stat
     ss = stash save
     sa = "!sh -c 'git stash apply stash@{$1}' -"
     sd = "!sh -c 'git stash drop stash@{$1}' -"
