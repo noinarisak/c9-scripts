@@ -64,7 +64,8 @@
     ss = stash save
     sa = "!sh -c 'git stash apply stash@{$1}' -"
     sd = "!sh -c 'git stash drop stash@{$1}' -"
-
+    sh = "!sh -c 'git stash show -p stash@{$1}' -"
+    
 [branch]
     autosetuprebase = always
 
