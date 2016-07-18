@@ -1,0 +1,2 @@
+
+alias apt-installed="dpkg --get-selections | grep -v deinstall"
