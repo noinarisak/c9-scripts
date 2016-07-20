@@ -54,17 +54,20 @@
     # Assume you create a remote name 'upstream' to base repo
     pu = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master"
     # Uprising 
-    ulg = !git log --oneline --decorate --graph --all
+    ulg = !git log --oneline --decorate --graph --all -n13
     # Disable Fast-Forward to reduce merge bubbles.
     mff = !git merge --no-ff
     # Stash related
     sl = stash list
-    slstat = stash list --stat
+    sls = stash list --stat
     ss = stash save
     sa = "!sh -c 'git stash apply stash@{$1}' -"
     sd = "!sh -c 'git stash drop stash@{$1}' -"
     sh = "!sh -c 'git stash show -p stash@{$1}' -"
-    
+    # WIP related
+	wip = !"git add -A; git ls-files --deleted -z | xargs -0 git rm; git commit -m \"wip\""
+	unwip = !"git log -n 1 | grep -q -c wip && git reset HEAD~1"
+
 [branch]
     autosetuprebase = always
 
