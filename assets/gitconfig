@@ -64,9 +64,10 @@
     sa = "!sh -c 'git stash apply stash@{$1}' -"
     sd = "!sh -c 'git stash drop stash@{$1}' -"
     sh = "!sh -c 'git stash show -p stash@{$1}' -"
-    # WIP related
-	wip = !"git add -A; git ls-files --deleted -z | xargs -0 git rm; git commit -m \"wip\""
-	unwip = !"git log -n 1 | grep -q -c wip && git reset HEAD~1"
+    # WIP related, note: not sure if like this approach vs git-stash
+    #wip = !"git add -A; git ls-files --deleted -z | xargs -0 git rm; git commit -m \"wip\""
+    #unwip = !"git log -n 1 | grep -q -c wip && git reset HEAD~1"
+    up = fetch origin -v
 
 [branch]
     autosetuprebase = always
