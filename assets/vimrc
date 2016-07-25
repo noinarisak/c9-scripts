@@ -126,3 +126,9 @@ set showcmd
 "	" Treat .json files as .js
 "	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 "endif
+
+" VimDiff deactivate read-only
+set noro
+" VimDiff ignore whitespace
+set diffopt+=iwhite
+set diffexpr=""
