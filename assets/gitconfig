@@ -69,7 +69,7 @@
     # WIP related, note: not sure if like this approach vs git-stash
     #wip = !"git add -A; git ls-files --deleted -z | xargs -0 git rm; git commit -m \"wip\""
     #unwip = !"git log -n 1 | grep -q -c wip && git reset HEAD~1"
-    up = fetch origin -v
+    up = fetch origin -pv
     vimdiff = difftool
     branchdiff = '!git difftool $(git merge-base master HEAD)'
 
