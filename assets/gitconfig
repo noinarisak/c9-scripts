@@ -17,7 +17,7 @@
     # Delete a branch
     brdel = branch -D
     brmerged = branch --merged
-    brnomerged = branch -no-merged
+    brnomerged = branch --no-merged
     ci = commit
     changes = "!f() { git log --pretty=format:'* %s' $1..$2; }; f"
     
