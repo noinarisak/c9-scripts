@@ -73,6 +73,9 @@
     upall = !"git fetch origin -pv; git fetch upstream -pv"
     vimdiff = difftool
     branchdiff = '!git difftool $(git merge-base master HEAD)'
+    # diff
+    dfstat = !git diff --stats --ignore-blank-lines
+    dfsum = !git diff --summary --ignore-blank-lines
 
 [branch]
     autosetuprebase = always
