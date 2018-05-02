@@ -1,4 +1,7 @@
-# How to use this repo
+# c9-scripts
+
+Is collection of the customs bash scripts that will get pre-installed in every 
+newly workspace in c9.
 
 Reference instructions located here
 https://community.c9.io/t/how-to-auto-configure-workspaces-on-creation/1323/2
@@ -12,9 +15,9 @@ the time of this writing, GitHub intergation was not option) you must manaully
 implement the setup discribed in section AWS Cloud9 instructions 
 [here](https://docs.aws.amazon.com/cloud9/latest/user-guide/settings-init-script.html#settings-init-script-view).
 
-Initial Cloud9 workspaces setup using the c9-script repo itself. :metal:
+Cloud9 workspaces setup using the c9-script repo itself. :metal:
 
-* Clone [c9-script](https://github.com/fnkr/c9-scripts)
+* Fork the [c9-script](https://github.com/fnkr/c9-scripts) repo.
 * In Cloud9 dashboard, assuming you have GitHub intergation enable, select the c9-script.
 * Provide a name for the workspaces, (i.e.) `c9-scripts`.
 * Select Ubuntu and then click the Create button.
@@ -29,7 +32,8 @@ Initial Cloud9 workspaces setup using the c9-script repo itself. :metal:
 
 ## Usage
 
-c9-script in action. Example of the installing developer toolchain.
+c9-script in action. Example of the installing developer toolchain. The current 
+collecton can be view [here](https://github.com/fnkr/c9-scripts/tree/master/utils)
 
 * Open another the IDE workspace.
 * Open terminal tab.
@@ -51,3 +55,7 @@ Manage MongoDB services
 $ mongodb-start
 $ mongodb-cli
 ```
+
+## Origin/Reference
+fknr responses on c9 [forum](https://community.c9.io/t/how-to-auto-configure-workspaces-on-creation/1323/2
+).
